@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: beatguru-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7972815740:AAHjhjeuO44SB8OK7M-bS_6wDDDewWuPfE8
+      - key: API_ID
+        value: '21869739'
+      - key: API_HASH
+        value: ab0d599eaf20086fcd33ecf27f34bfa6
